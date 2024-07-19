@@ -1,0 +1,138 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    width: 300px;
+    height: 600px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /
+    backdrop-filter: blur(60px); 
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 26px;
+    color: white;
+}
+
+.highlight {
+    color: red;
+}
+
+.dot {
+    color: red;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #fffafa;
+    border-radius: 2.5px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 30%;
+    height: 100%;
+    background-color: red;
+}
+
+.placeholders {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.placeholder {
+    width: 97px;
+    height: 90px;
+    background-color: #666;
+    border-radius: 10px;
+}
+
+.avatar-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid red;
+    transition: transform 0.3s;
+}
+
+.avatar-container:hover {
+    transform: scale(1.1);
+}
+
+.avatar {
+    width: 100%;
+    height: auto;
+}
+
+.counter {
+    margin-top: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+.increment-display {
+    position: absolute;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    color: white;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+
+@media only screen and (max-width: 390px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .progress-bar {
+        height: 4px;
+    }
+
+    .placeholders {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .placeholder {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .avatar-container {
+        width: 80px;
+        height: 80px;
+    }
+}
